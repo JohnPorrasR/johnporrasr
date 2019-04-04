@@ -5,13 +5,15 @@ import {
     GaleriaComponent,
     ArticulosComponent,
     ContactoComponent,
-    ServiciosComponent
+    ServiciosComponent,
+    PostsComponent
 } from './index.paginas';
 
 const app_routes: Routes = [
     {path: 'inicio', component: InicioComponent},
     {path: 'ocio', component: GaleriaComponent},
     {path: 'blog', component: ArticulosComponent},
+    {path: 'post', component: PostsComponent},
     {path: 'contactame', component: ContactoComponent},
     {path: 'servicios', component: ServiciosComponent},
     {path: '**', pathMatch: 'full' , redirectTo: 'inicio'}
