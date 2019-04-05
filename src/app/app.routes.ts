@@ -4,6 +4,7 @@ import {
     InicioComponent,
     GaleriaComponent,
     ArticulosComponent,
+    DepartamentosComponent,
     ContactoComponent,
     ServiciosComponent,
     PostsComponent
@@ -11,7 +12,7 @@ import {
 
 const app_routes: Routes = [
     {path: 'inicio', component: InicioComponent},
-    {path: 'ocio', component: GaleriaComponent},
+    {path: 'ocio', component: DepartamentosComponent},
     {path: 'blog', component: ArticulosComponent},
     {path: 'post', component: PostsComponent},
     {path: 'contactame', component: ContactoComponent},
