@@ -1,9 +1,11 @@
 <!-- Hero Section-->
-<section style="background: url(assets/img/hero.jpg); background-size: cover; background-position: center center" class="hero">
+<section style="background-size: cover; background-position: center center" [ngStyle]="{'background-image': 'url(' + pag.x_img + ')'}" class="hero" *ngFor="let pag of dataPag">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-7">
-        <h1>Bootstrap 4 Blog - A free template by Bootstrap Temple</h1><a href="#" class="hero-link">Discover More</a>
+    <div class="row" [ngStyle]="{'color':pag.x_letra}">
+      <div class="col-lg-7" [ngStyle]="{'background-color':pag.x_fondo}" style="border-radius: 15px; padding: 25px 35px;">
+        <h1>{{ pag.x_titulo }}</h1>
+        <p>{{ pag.x_resumen }}</p>
+        <a href="{{ pag.x_url }}" class="hero-link">Ver más</a>
       </div>
     </div>
   </div>
@@ -108,28 +110,16 @@
 </section>
 <hr style="width: 95%; margin: auto;">
 <section class="gallery no-padding">    
-    <div class="row">
-      <div class="mix col-lg-3 col-md-3 col-sm-6">
-        <div class="item">
-          <a href="assets/img/gallery-1.jpg" data-fancybox="gallery" class="image">
-            <img src="assets/img/gallery-1.jpg" alt="..." class="img-fluid">
-            <div class="overlay d-flex align-items-center justify-content-center">
-              <i class="icon-search"></i>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="mix col-lg-3 col-md-3 col-sm-6">
-        <div class="item"><a href="assets/img/gallery-2.jpg" data-fancybox="gallery" class="image"><img src="assets/img/gallery-2.jpg" alt="..." class="img-fluid">
-            <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div></a></div>
-      </div>
-      <div class="mix col-lg-3 col-md-3 col-sm-6">
-        <div class="item"><a href="assets/img/gallery-3.jpg" data-fancybox="gallery" class="image"><img src="assets/img/gallery-3.jpg" alt="..." class="img-fluid">
-            <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div></a></div>
-      </div>
-      <div class="mix col-lg-3 col-md-3 col-sm-6">
-        <div class="item"><a href="assets/img/gallery-4.jpg" data-fancybox="gallery" class="image"><img src="assets/img/gallery-4.jpg" alt="..." class="img-fluid">
-            <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div></a></div>
+  <div class="row">
+    <div class="mix col-lg-3 col-md-3 col-sm-6">
+      <div class="item">
+        <a href="assets/img/gallery-1.jpg" data-fancybox="gallery" class="image">
+          <img src="assets/img/gallery-1.jpg" alt="..." class="img-fluid">
+          <div class="overlay d-flex align-items-center justify-content-center">
+            <i class="icon-search"></i>
+          </div>
+        </a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
