@@ -6,15 +6,15 @@ import { HttpModule } from '@angular/http';
 import { app_routing } from './app.routes';
 
 import { AppComponent } from './app.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { HeaderComponent } from './components/header/header.component';
-import { InicioComponent } from './inicio/inicio.component';
-import { ServiciosComponent } from './servicios/servicios.component';
-import { ContactoComponent } from './contacto/contacto.component';
-import { GaleriaComponent } from './ocio/galeria/galeria.component';
-import { ArticulosComponent } from './blog/articulos/articulos.component';
-import { PostsComponent } from './blog/posts/posts.component';
-import { DepartamentosComponent } from './ocio/departamentos/departamentos.component';
+import { FooterComponent } from './views/components/footer/footer.component';
+import { HeaderComponent } from './views/components/header/header.component';
+import { InicioComponent } from './views/inicio/inicio.component';
+import { ServiciosComponent } from './views/servicios/servicios.component';
+import { ContactoComponent } from './views/contacto/contacto.component';
+import { GaleriaComponent } from './views/ocio/galeria/galeria.component';
+import { ArticulosComponent } from './views/blog/articulos/articulos.component';
+import { PostsComponent } from './views/blog/posts/posts.component';
+import { DepartamentosComponent } from './views/ocio/departamentos/departamentos.component';
 
 @NgModule({
   declarations: [

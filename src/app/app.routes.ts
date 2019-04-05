@@ -8,7 +8,7 @@ import {
     ContactoComponent,
     ServiciosComponent,
     PostsComponent
-} from './index.paginas';
+} from './views/index.paginas';
 
 const app_routes: Routes = [
     {path: 'inicio', component: InicioComponent},
