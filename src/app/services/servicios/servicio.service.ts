@@ -18,4 +18,8 @@ export class ServicioService {
          return this._http.get(this.url + 'servicios').map(res => res.json());
      }
 
+     obtenerServiciosMae() {
+         return this._http.get(this.url + 'obtener_servicios_mae').map(res => res.json());
+     }
+
 }
