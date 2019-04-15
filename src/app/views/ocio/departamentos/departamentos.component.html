@@ -1,28 +1,16 @@
 <section class="latest-posts"> 
   <div class="container">
     <div class="row">
-      <div class="post col-md-4">
-        <div class="post-thumbnail"><a href="post.html"><img src="assets/img/blog-1.jpg" alt="..." class="img-fluid"></a></div>
-        <div class="post-details">
-            <a href="post.html">
-            <h3 class="h4">Ocio</h3></a>
-          <p class="text-muted">Compartiré las películas, series y amines que me han gustado y las volvería a ver, como fotos tomadas por un aficionado (yo), y musica lml n_n lml.</p>
+      <div class="post col-md-4"  *ngFor="let d of dataOcio">
+        <div class="post-thumbnail">
+          <a href="post.html">
+            <img src="{{ d.x_url }}" alt="..." class="img-fluid">
+          </a>
         </div>
-      </div>
-      <div class="post col-md-4">
-        <div class="post-thumbnail"><a href="post.html"><img src="assets/img/blog-2.jpg" alt="..." class="img-fluid"></a></div>
         <div class="post-details">
             <a href="post.html">
-            <h3 class="h4">Blog</h3></a>
-          <p class="text-muted">Esta sección del sitio está dedicada a compartir conocimiento, podrás encontrar desde temas teóricos como casos prácticos.</p>
-        </div>
-      </div>
-      <div class="post col-md-4">
-        <div class="post-thumbnail"><a href="post.html"><img src="assets/img/blog-3.jpg" alt="..." class="img-fluid"></a></div>
-        <div class="post-details">
-            <a href="post.html">
-            <h3 class="h4">Servicios</h3></a>
-          <p class="text-muted">Análisis, desarrollo e implementación de soluciones informáticas, mejorando la integración de sus servicios, ayudando a alcanzar sus objetivos.</p>
+            <h3 class="h4">{{ d.x_titulo }}</h3></a>
+          <p class="text-muted">{{ d.x_descripcion }}</p>
         </div>
       </div>
     </div>

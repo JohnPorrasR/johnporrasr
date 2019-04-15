@@ -29,7 +29,9 @@
 <section class="featured-posts no-padding-top">
   <div class="container">
     <div class="row d-flex align-items-stretch" *ngFor="let d of dataUlPag">
-      <div class="image col-lg-5" [hidden]="d.position != 'right'"><img src="{{ d.x_img }}" alt="..."></div>
+      <div class="image col-lg-5" [hidden]="d.position != 'right'" style="min-height: 298px;">
+        <img src="{{ d.x_img }}" alt="..." style="height: 320px;">
+      </div>
       <div class="text col-lg-7">
         <div class="text-inner d-flex align-items-center">
           <div class="content">
@@ -48,7 +50,9 @@
           </div>
         </div>
       </div>
-      <div class="image col-lg-5" [hidden]="d.position != 'left'"><img src="{{ d.x_img }}" alt="..."></div>
+      <div class="image col-lg-5" [hidden]="d.position != 'left'" style="min-height: 298px;">
+        <img src="{{ d.x_img }}" alt="..." style="height: 320px;">
+      </div>
     </div>
   </div>
 </section>

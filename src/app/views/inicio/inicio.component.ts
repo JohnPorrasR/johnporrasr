@@ -21,7 +21,6 @@ export class InicioComponent implements OnInit {
     protected _servicioService: ServicioService
   ) { }
 
-  
   ngOnInit() {
     this.obtenerInicio();
     this.obtenerUltimaPublicacion();

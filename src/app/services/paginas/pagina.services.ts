@@ -26,8 +26,8 @@ export class PaginaService {
          return this._http.get(this.url + 'obtener_autores').map(res => res.json());
       }
 
-      obtenerUltimasPublicaciones(){
-          return this._http.get(this.url + 'ultimas_publicaciones').map(res => res.json());
+      obtenerUltimasPublicaciones() {
+         return this._http.get(this.url + 'ultimas_publicaciones').map(res => res.json());
       }
 
 }

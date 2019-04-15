@@ -18,12 +18,8 @@ export class OcioService {
          return this._http.get(this.url + 'etiquetas_galerias').map(res => res.json());
      }
 
-     obtenerGaleria(cod) {
-        return this._http.get(this.url + 'galerias/' + cod).map(res => res.json());
-     }
-
-     obtenerGalerias(cod) {
-        return this._http.get(this.url + 'obtener_galerias/' + cod).map(res => res.json());
+     obtenerGalerias() {
+        return this._http.get(this.url + 'galerias').map(res => res.json());
      }
 
      obtenerFotos(cod) {
