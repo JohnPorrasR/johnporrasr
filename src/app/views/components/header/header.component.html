@@ -24,19 +24,19 @@
       <div id="navbarcollapse" class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" [routerLink]="['/inicio']">Inicio</a>
+            <a [routerLink]="['/inicio']" class="nav-link" [routerLinkActive]="['active']">Inicio</a>
           </li>
           <li class="nav-item">
-            <a [routerLink]="['/ocio']" class="nav-link ">Ocio</a>
+            <a [routerLink]="['/ocio']" class="nav-link" [routerLinkActive]="['active']">Ocio</a>
           </li>
           <li class="nav-item">
-            <a [routerLink]="['/blog']" class="nav-link ">Blog</a>
+            <a [routerLink]="['/blog']" class="nav-link" [routerLinkActive]="['active']">Blog</a>
           </li>
           <li class="nav-item">
-            <a [routerLink]="['/servicios']" class="nav-link ">Servicio</a>
+            <a [routerLink]="['/servicios']" class="nav-link" [routerLinkActive]="['active']">Servicio</a>
           </li>
           <li class="nav-item">
-            <a [routerLink]="['/contactame']" class="nav-link ">Contacto</a>
+            <a [routerLink]="['/contactame']" class="nav-link" [routerLinkActive]="['active']">Contacto</a>
           </li>
         </ul>
       </div>

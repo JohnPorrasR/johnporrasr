@@ -2,13 +2,13 @@
   <div class="container">
     <div class="row">
       <div class="post col-md-4"  *ngFor="let d of dataOcio">
-        <div class="post-thumbnail">
-          <a href="post.html">
-            <img src="{{ d.x_url }}" alt="..." class="img-fluid">
+        <div class="post post-thumbnail">
+          <a routerLink="galeria/{{ d.x_titulo }}">
+            <img src="{{ d.x_url }}" alt="..." class="img-fluid" height="150px">
           </a>
         </div>
         <div class="post-details">
-            <a href="post.html">
+            <a routerLink="galeria/{{ d.x_titulo }}">
             <h3 class="h4">{{ d.x_titulo }}</h3></a>
           <p class="text-muted">{{ d.x_descripcion }}</p>
         </div>
