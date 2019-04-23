@@ -27,6 +27,25 @@
 </section>
 
 <section class="featured-posts no-padding-top">
+    <div class="container">
+      <div class="row"  *ngFor="let d of dataIni">
+        <div class="col-md-7">
+          <img class="textWrap" src="{{ d.x_img }}" />
+        </div>
+        <div class="col-md-5">
+          {{ d.x_descripcion }}
+          <ul *ngFor="let de of d.detalles">
+              <b *ngIf="de.m_detalle_tipo == 1">{{ de.x_detalle_desc }}</b>
+              <li *ngIf="de.m_detalle_tipo == 0" style="margin-left: 20px;">{{ de.x_detalle_desc }}</li>
+          </ul>
+          {{ d.x_nota }}
+        </div>
+      </div>
+    </div>
+</section>
+
+<!--
+<section class="featured-posts no-padding-top">
   <div class="container">
     <div class="row d-flex align-items-stretch" *ngFor="let d of dataUlPag">
       <div class="image col-lg-5" [hidden]="d.position != 'right'" style="min-height: 298px;">
@@ -36,7 +55,6 @@
         <div class="text-inner d-flex align-items-center">
           <div class="content">
             <header class="post-header">
-              <!--<div class="category"><a href="#">Business</a><a href="#">Technology</a></div>-->
               <a [routerLink]="d.x_url">
                 <h2 class="h4">{{ d.x_titulo }}</h2></a>
             </header>
@@ -56,6 +74,7 @@
     </div>
   </div>
 </section>
+-->
 <hr style="width: 95%; margin: auto;">
 <section class="gallery no-padding">    
   <div class="row">

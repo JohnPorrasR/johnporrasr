@@ -600,8 +600,9 @@ div[class*="-btn"] {
 }
 
 .navbar .navbar-nav a.nav-link.active {
-  color: #999;
+  color: #000;
   font-weight: bold;
+  border-bottom: 1px solid #000;
 }
 
 /* Navbar Media Query ------------------------------------- */

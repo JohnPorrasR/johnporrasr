@@ -18,12 +18,16 @@ export class OcioService {
          return this._http.get(this.url + 'etiquetas_galerias').map(res => res.json());
      }
 
-     obtenerGalerias() {
+     obtenerDepartamentos() {
         return this._http.get(this.url + 'galerias').map(res => res.json());
      }
 
-     obtenerFotos(cod) {
-        return this._http.get(this.url + 'obtener_fotos/' + cod).map(res => res.json());
+     obtenerDistritos(val) {
+        return this._http.get(this.url + 'obtener_distritos/' + val).map(res => res.json());
+     }
+
+     obtenerFotos(val1, val2) {
+        return this._http.get(this.url + 'obtener_fotos/' + val1 + '/' + val2).map(res => res.json());
      }
 
      obtenerDestacados() {

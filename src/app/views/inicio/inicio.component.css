@@ -1,0 +1,7 @@
+.textWrap{
+    float:left;
+    margin:5px;            
+}
+.textWrap p{
+    padding-top:3px;
+}

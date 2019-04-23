@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 
 // Componentes
 import { DepartamentosComponent } from '../ocio/departamentos/departamentos.component';
+import { DistritosComponent } from '../ocio/distritos/distritos.component';
 import { MainComponent } from '../ocio/main/main.component';
 import { GaleriaComponent } from '../ocio/galeria/galeria.component';
 import { OcioRoutingModule } from '../ocio/ocio-routing.module';
@@ -13,6 +14,7 @@ import { OcioRoutingModule } from '../ocio/ocio-routing.module';
 @NgModule({
     declarations: [
         DepartamentosComponent,
+        DistritosComponent,
         MainComponent,
         GaleriaComponent
     ],
@@ -24,6 +26,7 @@ import { OcioRoutingModule } from '../ocio/ocio-routing.module';
     ],
     exports: [
         DepartamentosComponent,
+        DistritosComponent,
         MainComponent
     ],
     providers: []
