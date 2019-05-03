@@ -28,6 +28,7 @@ export class GaleriaComponent implements OnInit {
     this._ocioService.obtenerFotos(val1, val2).subscribe(
       response => {
         this.dataFoto = response.data;
+        console.log(this.dataFoto);
       },
       error => {
         console.log(<any>error);
