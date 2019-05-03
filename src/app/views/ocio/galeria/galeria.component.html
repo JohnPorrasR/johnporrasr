@@ -4,7 +4,7 @@
       <div class="col-5" *ngFor="let d of dataFoto">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">{{ d.x_titulo }}</h5>
             <p class="card-text">
                <a data-fancybox="gallery" href="{{ d.x_url }}">
                  <img src="{{ d.x_url }}" width="100%">
