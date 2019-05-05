@@ -1,10 +1,10 @@
 <section class="latest-posts"> 
   <div class="container">
     <div class="row">
-      <div class="col-5" *ngFor="let d of dataFoto">
+      <div class="col-2" *ngFor="let d of dataFoto" style="margin-top: 25px;">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">{{ d.x_titulo }}</h5>
+            <!--<h5 class="card-title">{{ d.x_titulo }}</h5>-->
             <p class="card-text">
                <a data-fancybox="gallery" href="{{ d.x_url }}">
                  <img src="{{ d.x_url }}" width="100%">

@@ -1,10 +1,10 @@
 <section class="latest-posts"> 
   <div class="container">
     <div class="row">
-      <div class="post col-md-4" *ngFor="let d of dataOcio">
+      <div class="col-md-3" *ngFor="let d of dataOcio">
         <div class="post post-thumbnail">
           <a routerLink="{{ d.x_titulo }}">
-            <img src="{{ d.x_url }}" alt="..." class="img-fluid" height="150px">
+            <img src="{{ d.x_url }}" alt="..." class="img-fluid" height="100px">
           </a>
         </div>
         <div class="post-details">
